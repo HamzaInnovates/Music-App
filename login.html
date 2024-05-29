@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+        body{
+          font-family: 'Roboto Slab', serif;  
+          background-image: url("log.jfif");
+          background-size: cover;
+        }
+        h1 {
+        text-align: center;
+        color:white;
+        font-weight: bold;
+        font-size: 52px;
+
+      
+        }
+        .form
+        {
+           
+    width: 616px;
+    height: 503px;
+    position: absolute;
+    top: 167px;
+    left: 608px;
+    box-shadow: -7px 7px 66px black;
+    border-radius: 73px;
+        }
+        input{
+            border-radius: 10px;
+            width: 297px;
+            height: 41px;
+            background-color: #0000003d;
+            color: white;
+            padding: 4px;
+            font-size: 22px;
+        }
+        .cred {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 91px;
+            left: 160px;
+            color: white;
+        }
+         p {
+            color: white;
+            font-weight: bold;
+         }
+         button {
+            background-color: transparent;
+            color: white;
+            border: 1px solid gray;
+            font-weight: bold;
+            font-size: 22px;
+            cursor: pointer;
+            padding: 20px;
+            border-radius: 20px;
+
+
+         }
+         button:hover {
+            color: black;
+            background-color:darkgrey;
+            transform: scale(1.1);
+
+         }
+         .cred p {
+            font-size: 18px;
+            font-weight: bolder
+         }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+   <h1>Welcome to Music World </h1>
+   <div class="form">
+    <div class="cred">
+    <p> Enter Email</p>
+    <input type="email" id="email" placeholder="Enter Your email address">
+    <p>Enter Password</p>
+    <input type="password" id="pass" placeholder="Enter your Password" >
+    <br>
+    <button onclick="login()"> Login</button>
+</div>
+
+   </div>
+
+    </div>
+
+    <script type="text/javascript">
+   
+        function login() {
+email =  document.getElementById("email").value;
+pass =  document.getElementById("pass").value;
+
+if(email=="musicworld123@gmail.com" && pass == "musicworld")
+{
+    window.location.assign("landing.html")
+}
+else {
+
+    alert("Invalid Input")
+}
+
+
+
+
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <style>
+    .out {
+      position: absolute;
+      top: 14px;
+      left: 418px;
+  
+
+
+    }
+    button{
+
+      font-weight: bold;
+      padding: 21px;
+      color:black;
+      background-color: transparent;
+      border-radius: 20px;
+      font-size: 22px;
+      border: none;
+    }
+    button:hover {
+      background-color: darkgray;
+     color: black;
+     cursor: pointer;
+    }
+  </style>
+  
+</head>
+<body>
+  <Nav>
+    <ul>
+      <li class="logo"> <img src="logo.png" alt="Spotify" ></li>
+      <div class="move">
+      <li><a href="http://127.0.0.1:5500/landing.html#">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/About.html">About</a></li>
+    </div>
+    </ul>
+  </Nav>
+      <div class="displ"> Categories
+        <br>
+        <br>
+      
+        <a href="http://127.0.0.1:5500/bollywood.html" class="show">Bollywood</a>
+        <a href="http://127.0.0.1:5500/index.html" class="show">NCS</a>
+        <a href="http://127.0.0.1:5500/pop.html" class="show">POP</a>
+      </div>
+      <div class="out">
+        <button id="log" onclick="out()"> LogOut</button>
+
+      </div>
+      <div class="container">
+        <h1>Welcome To Music World!</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero animi molestiae omnis recusandae ut incidunt asperiores corrupti magnam quod tempora nostrum voluptatibus est cum libero doloribus reprehenderit amet labore maxime, eaque et ea nesciunt excepturi perferendis in! Nemo veritatis nam, perspiciatis itaque dicta animi? Neque reprehenderit at molestiae architecto perspiciatis libero vero, a eos velit adipisci, corrupti maiores, voluptatibus recusandae?</p>
+        <div class="pics">
+          <div><img id="pic1" src="Cimg/1.jfif" alt="NCS"></div>
+          <div><img id="pic2" src="Cimg/2.jfif" alt="bollyWood"></div>
+          <div><img id="pic3" src="Cimg/3.png" alt="POP"></div>
+        </div>
+      </div>
+      <div class="play">
+        <img src="play.gif">
+      </div>
+  <script>
+    function out(){
+
+      log = document.getElementById("log")
+      window.location.assign("login.html")
+      
+    }
+    
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <Nav>
+        <ul>
+          <li class="logo"> <img src="logo.png" alt="Spotify" ></li>
+          <div class="move">
+          <li><a href="http://127.0.0.1:5500/landing.html">Home</a></li>
+          <li><a href="http://127.0.0.1:5500/About.html">About</a></li>
+        </div>
+        </ul>
+      </Nav>
+          <div class="displ"> Categories
+            <br>
+            <br>
+          
+            <a href="http://127.0.0.1:5500/bollywood.html" class="show">Bollywood</a>
+            <a href="http://127.0.0.1:5500/index.html" class="show">NCS</a>
+            <a href="http://127.0.0.1:5500/pop.html" class="show">POP</a>
+          </div>
+<div class="container">
+    
+    <div class="side">
+<img src="side.jpg" alt="">
+    </div>
+    <div class="songlist">
+        <h1>Best of Bollywood Songs </h1>
+        
+        <div> 
+           
+            <div class="songitem">
+                <img src="covers/1.jpg" alt=""><span class="songname"> </span>
+               <span class="songlistplay"><span class="timestamp">5:30  </span><i id="1" class=" far songitemplay fa-2x fa-play-circle"></i></span>
+            </div>
+        </div>
+        <div> 
+            <div class="songitem">
+                <img src="covers/1.jpg" alt=""><span class="songname"> </span>
+               <span class="songlistplay"><span class="timestamp">4:20  </span><i  id="2" class=" far songitemplay fa-2x fa-play-circle"></i></span>
+            </div>
+        </div>
+        <div> 
+            <div class="songitem">
+                <img src="covers/1.jpg" alt=""><span class="songname"> </span>
+               <span class="songlistplay"><span class="timestamp">2:37  </span><i id="3" class=" far songitemplay fa-2x fa-play-circle"></i></span>
+            </div>
+        </div>
+        <div> 
+            <div class="songitem">
+                <img src="covers/1.jpg" alt=""><span class="songname"> </span>
+               <span class="songlistplay"><span class="timestamp">3:34  </span><i id="4" class=" far songitemplay fa-2x fa-play-circle"></i></span>
+            </div>
+        </div>
+        <div> 
+            <div class="songitem">
+                <img src="covers/1.jpg" alt=""><span class="songname"> </span>
+               <span class="songlistplay"><span class="timestamp">2:40  </span><i id="5" class=" far songitemplay fa-2x fa-play-circle"></i></span>
+            </div>
+        </div>
+        <div> 
+            <div class="songitem">
+                <img src="covers/1.jpg" alt=""><span class="songname"> </span>
+               <span class="songlistplay"><span class="timestamp">3:20  </span><i id="6" class=" far songitemplay fa-2x fa-play-circle"></i></span>
+            </div>
+        </div>
+        <div> 
+            <div class="songitem">
+                <img src="covers/1.jpg" alt=""><span class="songname"> </span>
+               <span class="songlistplay"><span class="timestamp">4:40  </span><i id="7" class=" far songitemplay fa-2x fa-play-circle"></i></span>
+            </div>
+        </div>
+        <div> 
+            <div class="songitem">
+                <img src="covers/1.jpg" alt=""><span class="songname"> </span>
+               <span class="songlistplay"><span class="timestamp">4:30  </span><i id="8" class=" far songitemplay fa-2x fa-play-circle"></i></span>
+            </div>
+        </div>
+        <div> 
+            <div class="songitem">
+                <img src="covers/1.jpg" alt=""><span class="songname"> </span>
+               <span class="songlistplay"><span class="timestamp">2:30  </span><i id="9" class=" far songitemplay fa-2x fa-play-circle"></i></span>
+            </div>
+        </div>
+        <div> 
+            <div class="songitem">
+                <img src="covers/1.jpg" alt=""><span class="songname"> </span>
+               <span class="songlistplay"><span class="timestamp">3:30  </span><i id="10" class=" far songitemplay fa-2x fa-play-circle"></i></span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+    <div class="song banner"></div>
+
+</div>
+<div class="bottom">
+    <input type="range" min="0" max="100" id="progressbar" name="range" value="0">
+
+
+    <div class="icons">
+        
+        <i id="prev"  class="fa-3x fa-solid fa-step-backward"></i>
+        <i  id="main"class=" far fa-3x fa-play-circle"></i>
+        <i id="next" class="fa-3x fa-solid fa-step-forward"></i>
+
+    </div >
+    <div class="songinfo">
+        <img  id="play" src="playing.gif" alt="Playing"> <span id="mainsongname">Tu Hai to Mujy Phir or kya chahiye -Atif Aslam</span> 
+    </div>
+</div>
+<button ></button>
+<script src="bscript.js">  
+</script>
+</body>
+</html>
